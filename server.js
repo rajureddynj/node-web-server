@@ -49,6 +49,13 @@ app.get('/', (req, res) => {
     })
 });
 
+app.get('/projects', (req, res) =>{
+    res.render('projects.hbs', {
+        pageTitle : 'My Projects',
+        welcomeNote : 'https://github.com/rajureddynj/node-web-server'
+    })
+});
+
 //about route
 app.get('/about', (req, res) =>{
     // res.send('<h1> about page </h1>');
